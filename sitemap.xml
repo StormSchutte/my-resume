@@ -1,147 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.stormschutte.com/</loc>
+    <loc>https://stormschutte.com/</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#about</loc>
+    <loc>https://stormschutte.com/#about</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#publications</loc>
+    <loc>https://stormschutte.com/#publications</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#services</loc>
+    <loc>https://stormschutte.com/#services</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#portfolio</loc>
+    <loc>https://stormschutte.com/#portfolio</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#testimonial</loc>
+    <loc>https://stormschutte.com/#testimonial</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#resume</loc>
+    <loc>https://stormschutte.com/#resume</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#courses</loc>
+    <loc>https://stormschutte.com/#courses</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#contact</loc>
+    <loc>https://stormschutte.com/#contact</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Portfolio Project URLs -->
   <url>
-    <loc>https://www.stormschutte.com/#potholeDetectionModal</loc>
+    <loc>https://stormschutte.com/#potholeDetectionModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#smartHomeModal</loc>
+    <loc>https://stormschutte.com/#smartHomeModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#fullStackModal</loc>
+    <loc>https://stormschutte.com/#fullStackModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#vrStressReliefModal</loc>
+    <loc>https://stormschutte.com/#vrStressReliefModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#metaverse3DModal</loc>
+    <loc>https://stormschutte.com/#metaverse3DModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#weaponDetectionModal</loc>
+    <loc>https://stormschutte.com/#weaponDetectionModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#gunfireDetectionModal</loc>
+    <loc>https://stormschutte.com/#gunfireDetectionModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#tag9Modal</loc>
+    <loc>https://stormschutte.com/#tag9Modal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#academyModal</loc>
+    <loc>https://stormschutte.com/#academyModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#itsModal</loc>
+    <loc>https://stormschutte.com/#itsModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#sunSeoModal</loc>
+    <loc>https://stormschutte.com/#sunSeoModal</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <!-- Publication URLs -->
   <url>
-    <loc>https://www.stormschutte.com/#publicationModal1</loc>
+    <loc>https://stormschutte.com/#publicationModal1</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#publicationModal2</loc>
+    <loc>https://stormschutte.com/#publicationModal2</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#publicationModal3</loc>
+    <loc>https://stormschutte.com/#publicationModal3</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stormschutte.com/#publicationModal4</loc>
+    <loc>https://stormschutte.com/#publicationModal4</loc>
     <lastmod>2024-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
