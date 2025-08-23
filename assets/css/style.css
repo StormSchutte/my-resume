@@ -1807,3 +1807,40 @@ header img:not(.logo),
 button.bottom-top-button:hover {
     animation: animate-pulse 3s linear infinite;
 }
+
+/*-----------------------[ Publications: Mobile Tweaks ]------------------------*/
+@media (max-width: 768px) {
+    .section-publications .tabContainer {
+        overflow: visible;
+    }
+    .section-publications .Tabcondent {
+        position: relative;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+    }
+    .section-publications .gallery {
+        gap: 20px;
+    }
+    .section-publications .gallery.flex-nowrap {
+        flex-wrap: wrap;
+    }
+    .section-publications .gallery-item,
+    .section-publications .gallery-item.mb-0 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .section-publications .gallery-item3 {
+        margin-top: 0;
+    }
+    .section-publications .gallery-item-sub img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-publications .gallery-item-sub img {
+        height: 200px;
+    }
+}
