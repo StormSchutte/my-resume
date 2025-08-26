@@ -740,7 +740,7 @@ header {
     color: var(--sub-text);
 }
 .tabContainer {
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 }
 .Tabcondent {

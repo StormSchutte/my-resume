@@ -848,7 +848,7 @@
                                             <div class="overlay">
                                                 <img src="assets/images/svg/content-svg.svg" alt="content-svg"
                                                     class="vimeo-icon">
-                                                <p class="overlay-text">VR 360° 스트레스 해소</p>
+                                                <p class="overlay-text">VR 360° 스트레스 해소</p>
                                             </div>
                                         </div>
                                         <div class="gallery-info">
@@ -1249,7 +1249,7 @@
                                             <div class="overlay">
                                                 <img src="assets/images/svg/content-svg.svg" alt="content-svg"
                                                     class="vimeo-icon">
-                                                <p class="overlay-text">VR 360° 스트레스 해소</p>
+                                                <p class="overlay-text">VR 360° 스트레스 해소</p>
                                             </div>
                                         </div>
                                         <div class="gallery-info">
@@ -2708,70 +2708,28 @@
             }
         });
     </script>
-    <!-- Modal debugging -->
+    <!-- Ensure key modals are attached to <body> to avoid overflow/transform clipping -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, checking modals...');
-            
-            // Check if Bootstrap is loaded
-            if (typeof bootstrap !== 'undefined') {
-                console.log('Bootstrap is loaded');
-                
-                // Check if specific modals exist
-                const semanticModal = document.getElementById('semanticSearchModal');
-                const videoModal = document.getElementById('videoManagementModal');
-                const switchModal = document.getElementById('switchAirModal');
-                
-                console.log('Semantic modal exists:', !!semanticModal);
-                console.log('Video modal exists:', !!videoModal);
-                console.log('Switch modal exists:', !!switchModal);
-                
-                // Test modal triggers
-                const semanticTriggers = document.querySelectorAll('[data-bs-target="#semanticSearchModal"]');
-                const videoTriggers = document.querySelectorAll('[data-bs-target="#videoManagementModal"]');
-                const switchTriggers = document.querySelectorAll('[data-bs-target="#switchAirModal"]');
-                
-                console.log('Semantic triggers found:', semanticTriggers.length);
-                console.log('Video triggers found:', videoTriggers.length);
-                console.log('Switch triggers found:', switchTriggers.length);
-                
-                // Add click event listeners for debugging
-                semanticTriggers.forEach(function(trigger, index) {
-                    trigger.addEventListener('click', function(e) {
-                        console.log('Semantic trigger clicked:', index);
-                        console.log('Target modal:', this.getAttribute('data-bs-target'));
-                    });
-                });
-                
-                videoTriggers.forEach(function(trigger, index) {
-                    trigger.addEventListener('click', function(e) {
-                        console.log('Video trigger clicked:', index);
-                        console.log('Target modal:', this.getAttribute('data-bs-target'));
-                    });
-                });
-                
-                switchTriggers.forEach(function(trigger, index) {
-                    trigger.addEventListener('click', function(e) {
-                        console.log('Switch trigger clicked:', index);
-                        console.log('Target modal:', this.getAttribute('data-bs-target'));
-                    });
-                });
-                
-                // Add a test button to check if modals work at all
-                const testButton = document.createElement('button');
-                testButton.textContent = 'Test Modal System';
-                testButton.style.cssText = 'position: fixed; top: 10px; left: 10px; z-index: 9999; background: red; color: white; padding: 10px; border: none; cursor: pointer;';
-                testButton.addEventListener('click', function() {
-                    console.log('Test button clicked');
-                    const testModal = new bootstrap.Modal(document.getElementById('weaponDetectionModal'));
-                    testModal.show();
-                });
-                document.body.appendChild(testButton);
-                
+        (function () {
+            const modalIds = [
+                'semanticSearchModal',
+                'videoManagementModal',
+                'switchAirModal'
+            ];
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', moveModals);
             } else {
-                console.error('Bootstrap is not loaded!');
+                moveModals();
             }
-        });
+            function moveModals() {
+                modalIds.forEach(function (id) {
+                    const el = document.getElementById(id);
+                    if (el && el.parentNode !== document.body) {
+                        document.body.appendChild(el);
+                    }
+                });
+            }
+        })();
     </script>
 </body>
 
