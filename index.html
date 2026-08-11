@@ -3,11 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+try {
+  var storedLang = localStorage.getItem('lang');
+  if (storedLang === 'ko' || (!storedLang && (navigator.language || '').toLowerCase().indexOf('ko') === 0)) {
+    location.replace('ko.html' + location.hash);
+  }
+} catch (e) {}
+</script>
 <script>document.documentElement.classList.add('js-enabled');</script>
 <title>Storm Schutte | Machine Learning Engineer &amp; Senior Developer</title>
 <meta name="description" content="Storm Schutte is a Machine Learning Engineer and technology leader with 19+ years of experience building AI systems, cloud architecture, and full-stack products across South Africa and South Korea.">
 <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg">
 <link rel="canonical" href="https://stormschutte.com/">
+<link rel="alternate" hreflang="en" href="https://stormschutte.com/">
+<link rel="alternate" hreflang="ko" href="https://stormschutte.com/ko.html">
+<link rel="alternate" hreflang="x-default" href="https://stormschutte.com/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

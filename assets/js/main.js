@@ -73,6 +73,18 @@
     }
   }
 
+  /* ---------- Language preference (remembers an explicit EN/KO choice
+     so it overrides the browser-language auto-redirect in <head>) ---------- */
+  function initLangPref() {
+    doc.querySelectorAll(".lang-switch a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        var href = a.getAttribute("href") || "";
+        var lang = href.indexOf("ko.html") !== -1 ? "ko" : "en";
+        try { localStorage.setItem("lang", lang); } catch (e) {}
+      });
+    });
+  }
+
   /* ---------- Filter tabs (projects / publications) ---------- */
   function initFilters() {
     doc.querySelectorAll("[data-filter-group]").forEach(function (group) {
@@ -185,6 +197,7 @@
 
   doc.addEventListener("DOMContentLoaded", function () {
     hydrateProtectedContacts();
+    initLangPref();
     initNav();
     initFilters();
     initReveal();

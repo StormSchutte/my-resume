@@ -3,11 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+try {
+  if (localStorage.getItem('lang') === 'en') {
+    location.replace('index.html' + location.hash);
+  }
+} catch (e) {}
+</script>
 <script>document.documentElement.classList.add('js-enabled');</script>
 <title>스톰 슈트 | 머신러닝 엔지니어 &amp; 시니어 개발자</title>
 <meta name="description" content="스톰 슈트(Storm Schutte)는 AI 시스템, 클라우드 아키텍처, 풀스택 제품을 19년 이상 개발해온 머신러닝 엔지니어이자 기술 리더입니다.">
 <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg">
 <link rel="canonical" href="https://stormschutte.com/ko.html">
+<link rel="alternate" hreflang="en" href="https://stormschutte.com/">
+<link rel="alternate" hreflang="ko" href="https://stormschutte.com/ko.html">
+<link rel="alternate" hreflang="x-default" href="https://stormschutte.com/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
