@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Storm Schutte — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16202a;
+    --sub: #4b5a68;
+    --faint: #7c8894;
+    --accent: #0f766e;
+    --rule: #d7dde1;
+    --rule-light: #eaeef1;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 8.7pt;
+    line-height: 1.32;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: 100%;
+    padding: 0;
+  }
+  a { color: var(--accent); text-decoration: none; }
+
+  /* ---------- Header ---------- */
+  header.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2pt solid var(--ink);
+    padding-bottom: 5pt;
+    margin-bottom: 7pt;
+  }
+  header.resume-header h1 {
+    margin: 0 0 1.5pt;
+    font-size: 18.5pt;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  header.resume-header .role {
+    font-size: 9.6pt;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  header.resume-header .contact {
+    text-align: right;
+    font-size: 8pt;
+    color: var(--sub);
+    line-height: 1.45;
+  }
+  header.resume-header .contact a { color: var(--sub); }
+
+  /* ---------- Section headings ---------- */
+  h2.sec {
+    font-size: 8.8pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--ink);
+    border-bottom: 1pt solid var(--ink);
+    padding-bottom: 1.6pt;
+    margin: 8pt 0 4pt;
+  }
+  section:first-of-type h2.sec { margin-top: 0; }
+
+  /* ---------- Summary ---------- */
+  p.summary {
+    margin: 0 0 2pt;
+    color: var(--ink);
+    text-align: justify;
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 100pt 1fr;
+    row-gap: 1.8pt;
+    column-gap: 8pt;
+  }
+  .skills-grid dt {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .skills-grid dd {
+    margin: 0;
+    color: var(--sub);
+  }
+
+  /* ---------- Experience ---------- */
+  .job {
+    margin-bottom: 4.5pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+  }
+  .job-title {
+    font-weight: 700;
+    font-size: 9.1pt;
+  }
+  .job-org {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .job-meta {
+    font-size: 7.9pt;
+    color: var(--faint);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .job-sub {
+    font-size: 8pt;
+    color: var(--faint);
+    font-style: italic;
+    margin: 0.5pt 0 1.5pt;
+  }
+  ul.job-bullets {
+    margin: 1.5pt 0 0;
+    padding-left: 10pt;
+  }
+  ul.job-bullets li {
+    margin-bottom: 0.6pt;
+    color: var(--ink);
+  }
+  ul.job-bullets li::marker {
+    color: var(--accent);
+  }
+
+  /* ---------- Publications ---------- */
+  ul.pub-list {
+    margin: 0; padding-left: 10pt;
+  }
+  ul.pub-list li { margin-bottom: 1.6pt; }
+  ul.pub-list li::marker { color: var(--accent); }
+  .pub-year { color: var(--faint); font-variant-numeric: tabular-nums; }
+  .pub-note { color: var(--sub); font-size: 7.9pt; }
+
+  /* ---------- Education ---------- */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.4pt;
+  }
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10pt;
+    break-inside: avoid;
+  }
+  .edu-main { }
+  .edu-degree { font-weight: 700; }
+  .edu-org { color: var(--accent); font-weight: 600; }
+  .edu-detail { color: var(--sub); font-size: 7.9pt; }
+  .edu-year { color: var(--faint); font-size: 7.9pt; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  /* ---------- Certifications ---------- */
+  .cert-grid {
+    display: grid;
+    grid-template-columns: 92pt 1fr;
+    row-gap: 1.8pt;
+    column-gap: 8pt;
+  }
+  .cert-grid dt { font-weight: 700; }
+  .cert-grid dd { margin: 0; color: var(--sub); }
+
+  footer.resume-footer {
+    margin-top: 6pt;
+    padding-top: 4pt;
+    border-top: 0.75pt solid var(--rule-light);
+    font-size: 7.2pt;
+    color: var(--faint);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="resume-header">
+    <div>
+      <h1>Storm Schutte</h1>
+      <div class="role">Chief Technology Officer &amp; Machine Learning Engineer</div>
+    </div>
+    <div class="contact">
+      Seoul, South Korea<br>
+      <a href="mailto:mail@stormschutte.com">mail@stormschutte.com</a> &nbsp;·&nbsp; +82&nbsp;10-6503-2404<br>
+      <a href="https://stormschutte.com">stormschutte.com</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="sec">Summary</h2>
+    <p class="summary">Results-driven Chief Technology Officer, Machine Learning Engineer, and full-stack technology leader with 19+ years architecting end-to-end software solutions and AI-powered platforms. Holds a Master's degree in Artificial Intelligence (Machine &amp; Deep Learning) with deep expertise spanning backend, frontend, and database design through cloud infrastructure, DevOps, and advanced AI/ML integration. Proven record delivering scalable, production-ready platforms leveraging deep learning, NLP, RAG pipelines, LLM agents, and vector databases — including a semantic search system that improved retrieval accuracy from 26% to 98%. Track record founding and leading engineering organizations, lecturing on applied AI at the university level, and aligning technology strategy with business growth across e-commerce, trade, workspace, and SaaS domains.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Core Skills</h2>
+    <dl class="skills-grid">
+      <dt>AI &amp; Machine Learning</dt>
+      <dd>Deep Learning (CNNs, RNNs), NLP, Semantic Search &amp; Vector Indexing, RAG Pipelines, LLM Agents &amp; Integration, Computer Vision, MLOps, Workflow &amp; Process Automation, Data Analytics &amp; Business Intelligence</dd>
+      <dt>Languages</dt>
+      <dd>Python, JavaScript / TypeScript, R — working knowledge of C#, Java, PHP</dd>
+      <dt>Frameworks &amp; Tools</dt>
+      <dd>TensorFlow, PyTorch, Keras, scikit-learn, spaCy, Django, FastAPI, Flask, React, Next.js, Hadoop, Apache Spark, Docker, Git</dd>
+      <dt>Cloud &amp; Infrastructure</dt>
+      <dd>AWS, Google Cloud Platform, Microsoft Azure, Linux/Ubuntu Server, Microsoft Server &amp; Active Directory, IoT (Raspberry Pi, Arduino)</dd>
+      <dt>Databases</dt>
+      <dd>Vector DBs (Weaviate, FAISS, Pinecone, PGVector), PostgreSQL, MySQL, MongoDB, Redis, Neo4j</dd>
+      <dt>Leadership</dt>
+      <dd>IT &amp; Product Strategy, System Architecture, Agile/Scrum, Cross-Functional &amp; Global Team Leadership, Technical Delivery Management</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2 class="sec">Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Founder</span> · <span class="job-org">KTS Export</span></div>
+        <div class="job-meta">Jun 2026 – Present</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Founded and built an AI-driven platform automating the full export lifecycle — inventory acquisition, container verification, logistics tracking, sales, and profitability analysis — for trade between Korean suppliers and global buyers.</li>
+        <li>Built end-to-end inventory traceability (serial- and model-level tracking) and automated export documentation, compliance workflows, and real-time BI/financial dashboards.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">University Lecturer &amp; AI Systems Engineer</span> · <span class="job-org">Storm Tower — AI Consulting</span></div>
+        <div class="job-meta">Feb 2026 – Present</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Lecture on applied AI at universities; advise organizations on converting AI into measurable business impact.</li>
+        <li>Supported seven companies in adopting AI technologies — building custom applications, automating workflows, and deploying production-grade LLM/RAG knowledge platforms, semantic search, and intelligent routing systems.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Chief Technology Officer</span> · <span class="job-org">G Man Auto Parts Corp</span></div>
+        <div class="job-meta">2025</div>
+      </div>
+      <div class="job-sub">Deep Tech Investment Integration — South Korea</div>
+      <ul class="job-bullets">
+        <li>Led technology strategy and deep-tech integration, directing ML, deep learning, RAG, and LLM-agent initiatives and vector-DB–powered search for e-commerce and enterprise clients.</li>
+        <li>Provided technical leadership across engineering teams and guided long-term IT strategy and cloud infrastructure development.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Chief Technology Officer</span> <span class="job-sub" style="font-style:normal;">(prev. Data Scientist / Senior Developer)</span> · <span class="job-org">Office Harbour</span></div>
+        <div class="job-meta">2024 – Present</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Architected and built the platform end-to-end — backend, frontend, ML systems, and AI-driven RAG integrations — on self-sufficient, cloud-native infrastructure with semantic search, vector indexing, and Cloudflare edge caching, achieving 99% uptime and near-instant global response times.</li>
+        <li>Promoted to CTO; now directs product strategy and engineering execution for an AI-powered platform automating workspace discovery, lead qualification, provider matching, and customer engagement.</li>
+        <li>Designed intelligent recommendation systems and automation pipelines for office sourcing, onboarding, quoting, and customer communications, backed by BI reporting.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Data Scientist (Consultant) / Senior Developer</span> · <span class="job-org">Silver Cloud B.V.</span></div>
+        <div class="job-meta">2022 – 2025</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Led ML solution development focused on NLP (TensorFlow, PyTorch, spaCy); integrated LLMs to expand product capabilities and improve model accuracy.</li>
+        <li>Architected and managed AWS/GCP cloud infrastructure for high-availability AI services, and advised on backend/frontend architecture to boost development efficiency.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Co-Founder</span> · <span class="job-org">SableApps (Pty) Ltd</span></div>
+        <div class="job-meta">2017 – 2022</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Founded and led SableApps, delivering 8+ major Python/Django applications across healthcare, education, and finance.</li>
+        <li>Built a Korean Government-funded adaptive testing platform for hospital nurses, a school management system (attendance, finance, class management), and a stock-market trading credibility platform for a Dutch client.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">Developer Team Leader</span> · <span class="job-org">CornWare (Pty) Ltd</span></div>
+        <div class="job-meta">2018 – 2019</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Led a four-developer team building a hospital staff-management platform with an AI-oriented smart testing system, on Azure Cloud, Django, and Microsoft SQL Server.</li>
+        <li>Architected real-time tracking and quality-control workflows across departments for multi-business deployment.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">International Team Leader</span> · <span class="job-org">Sunae</span></div>
+        <div class="job-meta">2014 – 2017</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Led a globally distributed team across the U.S., Australia, China, Brazil, South Africa, Russia, and Japan.</li>
+        <li>Directed IT infrastructure and operations across international centers, designing enterprise systems supporting cross-border collaboration and business continuity.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-title">IT Manager &rarr; Director</span> · <span class="job-org">Switch Air (Pty) Ltd</span></div>
+        <div class="job-meta">2007 – 2011</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Promoted from IT and corporate sales to Director; secured and managed corporate contracts with clients including Anglo American, BTX, Longmin, and Amplats Platinum Mines.</li>
+        <li>Designed, built, and managed enterprise server rooms (data centers) and the company's Microsoft Server / Active Directory infrastructure for 47 employees.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <h2 class="sec">Publications</h2>
+    <ul class="pub-list">
+      <li>Real-Time IoT Security Framework for Detecting a Person with a Weapon Using Raspberry Pi, Google Vertex AI, and AWS <span class="pub-year">— 2025</span></li>
+      <li>Optimizing Content for Educational Curricula with Large Language Models (LLMs) <span class="pub-year">— 2025</span><br><span class="pub-note">Published in: <em>Generative Artificial Intelligence Applications — Holistic Reflections From the Educational Landscape</em> (eds. Tinmaz &amp; Turan, Peter Lang)</span></li>
+      <li>Deep Segmentation Techniques for Breast Cancer Diagnosis <span class="pub-year">— 2024</span></li>
+      <li>Big Data Tools, Deep Learning &amp; 3D Objects in the Metaverse <span class="pub-year">— 2023</span></li>
+      <li>K-Pop and Education Migration to Korea in the Digitalised COVID-19 Era <span class="pub-year">— 2022</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="sec">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-row">
+        <div class="edu-main"><span class="edu-degree">M.S., Artificial Intelligence (Machine / Deep Learning)</span> · <span class="edu-org">Woosong University</span><br><span class="edu-detail">GPA 4.2 / 4.5</span></div>
+        <div class="edu-year">2024</div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-main"><span class="edu-degree">B.A., Global Media &amp; Programming</span> · <span class="edu-org">Sol International University</span><br><span class="edu-detail">GPA 4.3</span></div>
+        <div class="edu-year">2018</div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-main"><span class="edu-degree">Certificate in Korean Culture</span> · <span class="edu-org">Hannam University</span></div>
+        <div class="edu-year">2014</div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-main"><span class="edu-degree">Certificate in Korean Language</span> · <span class="edu-org">Jeju National University</span></div>
+        <div class="edu-year">2012</div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-main"><span class="edu-degree">High School Matric</span> · <span class="edu-org">Michael Mount Waldorf School</span> <span class="edu-detail">(South Africa)</span></div>
+        <div class="edu-year">2007</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="sec">Certifications &amp; Coursework</h2>
+    <dl class="cert-grid">
+      <dt>AI &amp; ML</dt>
+      <dd>AWS SageMaker Practical · Machine Learning · Deep Learning for Image Segmentation (TensorFlow 2) · NLP with Python · Advanced Algorithms</dd>
+      <dt>Data &amp; Big Data</dt>
+      <dd>Big Data &amp; Hadoop · Hands-On Hadoop · The Ultimate Hands-On Hadoop</dd>
+      <dt>Software &amp; Web</dt>
+      <dd>Modern Python Bootcamp · Deep Python Studies · JavaScript (Basics to Advanced) · REST API with Python · Python API for Trading · Mastering AJAX · Complete React Developer (Redux, Hooks, GraphQL) · Mastering Django Web Development · Python Django Bootcamp · SEO Compliance</dd>
+      <dt>Databases</dt>
+      <dd>Learn SQL Using PostgreSQL: Zero to Hero · PostgreSQL Complete</dd>
+      <dt>IoT &amp; Emerging Tech</dt>
+      <dd>IoT with Arduino &amp; Python · Raspberry Pi Tips, Tricks &amp; Hacks · Introduction to VR with Unity</dd>
+    </dl>
+  </section>
+
+  <footer class="resume-footer">Storm Schutte — References available upon request</footer>
+
+</div>
+</body>
+</html>
